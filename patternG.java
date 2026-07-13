@@ -1,7 +1,7 @@
-import java.util.*;
-public class patternE {
+import java.util.Scanner;
+public class patternG {
     public static void main(String[] args) {
-        //number decreasing pyramid pattern
+        //K -pattern
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of rows: ");
         int n = sc.nextInt();
@@ -11,14 +11,25 @@ public class patternE {
             }
             System.out.println();
         }
+        for(int i=1;i<n;i++){
+            for(int j=1;j<=i+1;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
+    
 }
 //output:
 //Enter the number of rows: 5
 /*
- 12345
- 1234
- 123
- 12
- 1
+ *****
+ ****
+ ***
+ **
+ *
+ **
+ ***
+ ****
+ *****
  */
